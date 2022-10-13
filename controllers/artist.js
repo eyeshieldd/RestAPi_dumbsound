@@ -3,6 +3,7 @@ const {
 } = require('../models');
 const Joi = require('@hapi/joi');
 
+# get
 exports.getArtist = async (req, res) => {
 	try {
 		const artist = await Artist.findAll({
@@ -29,6 +30,7 @@ exports.getArtist = async (req, res) => {
 	}
 };
 
+# tambah
 exports.addArtist = async (req, res) => {
 	try {
 		// const schema = Joi.object({
