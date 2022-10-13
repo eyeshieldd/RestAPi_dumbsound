@@ -2,6 +2,7 @@ const { Song, Artist } = require('../models');
 const Joi = require('@hapi/joi');
 const { response } = require('express');
 
+# ga ada komentar nih di sini
 exports.getSong = async (req, res) => {
 	try {
 		const { page: pageQuery, limit: limitQuery, artisId } = req.query;
